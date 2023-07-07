@@ -26,10 +26,25 @@ optional = false
 python-versions = ">=3.7"
 
 [[package]]
+name = "jpype1"
+version = "1.4.1"
+description = "A Python to Java bridge."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+packaging = "*"
+
+[package.extras]
+docs = ["readthedocs-sphinx-ext", "sphinx", "sphinx-rtd-theme"]
+tests = ["pytest"]
+
+[[package]]
 name = "packaging"
 version = "23.1"
 description = "Core utilities for Python packages"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.7"
 
@@ -75,12 +90,13 @@ python-versions = ">=3.7"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "5a9be1253d4de03d1847c15c491fa2072dfc8b9f93f1a4e965c67e411b17c67f"
+content-hash = "db9240b457164a3f4656cd917bb1a8d84689309db65daebeb10187737e7ffbc7"
 
 [metadata.files]
 colorama = []
 exceptiongroup = []
 iniconfig = []
+jpype1 = []
 packaging = []
 pluggy = []
 pytest = []
